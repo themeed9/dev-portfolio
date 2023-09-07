@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: HelvaticaNeue;
+    src: url(./fonts/HelveticaNeue.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: auto;
+    padding:2rem 6.25rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.header-wrapper{
+    width: fit-content;
+    height: auto;
+}
+.header-wrapper h4 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.hero-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 6.25rem;
+    row-gap: 1rem;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    height: auto;
+    padding: 3rem 2rem;
+    justify-content: center;
+    align-items: start;
+    row-gap: 2rem;
+    background-color: #091028;
+    border-radius: .4rem;
+    background: linear-gradient(210deg, #091028 -20.87%, rgba(22, 4, 28, 0.96) 47.08%, rgba(27, 1, 24, 0.95) 99.78%);
+}
+.left-content div {
+   width: fit-content;
+   height: auto;
+}
+.left-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: whitesmoke;
+    text-align: left;
+    width: 80%;
+    height: auto;
+}
+.left-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #E3E3E3;
+    text-align: left;
+    width: 80%;
+    height: auto;
+    line-height: 1.5rem;
+}
+.left-content button {
+    width: fit-content;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: .3rem;
+}
+.left-content a {
+    text-decoration: none;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.left-content button :hover {
+    color: darkblue;
+    background-color: azure;
+    border-radius: .3rem;
+    width: fit-content;
+    height: auto;
+}
+.rigth-content{
+    width: 31%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 3rem;
+    border-radius: .4rem;
+    object-fit: cover;
+    background-position: center;
+    padding: 3.5rem 0;
+    border: #2A2B2E solid .1rem;
+    position: relative;
+}
+.bg-image {
+    width: 37%;
+    height: auto;
+}
+.bg-image img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    right: .1rem;
+}
+.image-div{
+    width: 55%;
+    height: auto;
+}
+
+.image{
+    background-image: url("./images/profile\ image.jpg");
+    width: 100%;
+    height: 30vh;
+    border-radius: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    bottom: 4rem;
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    position: relative;
+    z-index: 2;
+}
+.social-links div {
+    width: fit-content;
+    height: auto;
+    border-bottom: solid .1rem #2A2B2E;
+}
+.social-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2A2B2E;
+}
+.social-links div :hover {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: darkblue;
+}
+.project-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem 6.25rem;
+    row-gap: 1rem;
+    background-color: whitesmoke;
+    margin-top: 3rem;
+}
+.project-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2.5rem 1.5rem;
+    column-gap: 1rem;
+    width: 49.5%;
+    height: auto;
+    border: solid .1rem #E3E3E3;
+    border-radius: 1rem;
+    row-gap: 1rem;
+}
+.card-image {
+    width: 100%;
+    height: 35vh;
+    background-image: url("./images/placeholder.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+   
+
+}
+.card-header div {
+    width: fit-content;
+    height: auto;
+}
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.card-header h4 {
+    text-align: left ;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-header h6 {
+    text-align: right;
+    font-weight: 500;
+    color: darkblue;
+}
+.card p {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #a69f9f;
+    padding: .3rem 0 .3rem 0;
+}
+.card button {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border: none;
+    background-color: #000;
+    border-radius: .3rem;
+}
+.card a {
+    padding: 1rem 3rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.card button :hover {
+    color: darkblue;
+    background-color: azure;
+}
+.service-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem 6.25rem;
+    row-gap: 1rem;
+}
+.service-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+}
+.service-card {
+    width: 30%;
+    height: auto;
+    background-color: #a69f9f;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 2rem;
+    border-radius: .3rem;
+}
+.footer-section {
+    width: 87%;
+    height: auto;
+    background-color: #000;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: 6rem 4rem 10rem 4rem;
+    margin-bottom: 2rem;
+    column-gap: 4rem;
+}
+.about-section {
+    width: 100%;
+    height: auto;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+.about-section div {
+    width: fit-content;
+    height: auto;
+}
+.about-section p {
+    font-weight: 400;
+    color: #a69f9f;
+    font-size: 1rem;
+}
+.contact-section {
+    width: 100%;
+    height: auto;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+.contact-section div {
+    width: fit-content;
+    height: auto;
+}
+.contact-section a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #a69f9f;
+}
+.contact-section p {
+    font-weight: 400;
+    color: #a69f9f;
+    font-size: 1rem;
+}
+.footer-social-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+}
